@@ -1,6 +1,5 @@
 package com.cliffray.hw_8button;
 
-import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -11,12 +10,15 @@ import android.view.View;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
-public class MenusActivity extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MenusActivity extends AppCompatActivity {
     private TextView tvMessage;
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menus);
+        tvMessage = (TextView) findViewById(R.id.tvMessage);
         registerForContextMenu(tvMessage);
     }
     @Override

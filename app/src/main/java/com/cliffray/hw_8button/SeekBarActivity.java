@@ -13,6 +13,7 @@ public class SeekBarActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.seekbar);
         findViews();
     }
 
@@ -37,4 +38,5 @@ public class SeekBarActivity extends Activity {
             }
         });
     }
+
 }
